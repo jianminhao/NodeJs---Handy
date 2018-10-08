@@ -1,0 +1,197 @@
+<div>
+
+    <header id="home-bg">
+        <div class="container">
+            <h1 class="text-border-dark">Enjoy food with us</h1>
+            <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#idModalRegister">Become a Chef</button>
+            <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#">Become a Taster</button>
+            <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#idModalLogin">Login</button>
+        </div>
+    </header>
+
+    <!-- Food-Grid -->
+    <section id="food-grid">
+        <div class="container">
+            <header class="col-lg-12 text-center">
+                <h2>Find out what is out there!</h2>
+                <h3>Craving for something delicious?</h3>
+            </header>
+            <main>
+                <div class="food-grid-item col-md-4 col-sm-6">
+                    <a href="" data-toggle="modal">
+                        <div class="food-grid-hover-content">
+                            <i class="fa fa-heart fa-3x"></i>
+                        </div>
+                        <img src="images/home_food_art.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="food-grid-caption">
+                        <h3>Delicacies</h3>
+                        <p class="text-muted">Beautifully hand-crafted designs</p>
+                    </div>
+                </div>
+                <div class="food-grid-item col-md-4 col-sm-6">
+                    <a href="" data-toggle="modal">
+                        <div class="food-grid-hover-content">
+                            <i class="fa fa-heart fa-3x"></i>
+                        </div>
+                        <img src="images/jambalaya.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="food-grid-caption">
+                        <h3>The Meats</h3>
+                        <p class="text-muted">Just the way you like them.</p>
+                    </div>
+                </div>
+                <div class="food-grid-item col-md-4 col-sm-6">
+                    <a href="" data-toggle="modal">
+                        <div class="food-grid-hover-content">
+                            <i class="fa fa-heart fa-3x"></i>
+                        </div>
+                        <img src="images/home_food_art_10.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="food-grid-caption">
+                        <h3>Salads</h3>
+                        <p class="text-muted">Healthy food, healthy life.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section id="home-bg-2"></section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+        <div class="container">
+            <div class="page-header">
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="row">
+                <div id="idDivContactUsMsg" class="col-sm-4">
+                    <p>Send us a message</p>
+                </div>
+
+                <div class="col-sm-8">
+                    <form id="idFormContactus" action="" class="form-horizontal" method="POST">
+                        <div class="form-group">
+                            <label for="user_name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Enter your name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user_email" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="user_email" name="user_email" placeholder="Enter your email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user_message" class="col-sm-2 control-label">Message</label>
+                            <div class="col-sm-10">
+                                <textarea id="user_message" name="user_message" class="form-control" cols="20" rows="10" placeholder="Enter your message"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <button type="submit" class="btn btn-primary" onclick="alert('Need implementation')">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <h3>More coming soon!</h3>
+            <hr style="border-top: 1px solid #ccc;">
+            <ul class="list-inline">
+                <li><a href="http://www.twitter.com/niiber">Twitter</a></li>
+                <li><a href="http://www.facebook.com/niiber">Facebook</a></li>
+                <li><a href="http://www.youtube.com/niiber">YouTube</a></li>
+            </ul>
+            <p>Copyright &copy; 2015 Niiber. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <!-------
+    MODALS
+    -------->
+
+
+    <!-- Modal Register -->
+    <div class="modal fade" id="idModalRegister" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="" class="form-horizontal" method="post">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                        <h2 class="modal-title" id="myModalLabel">Register</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label">Username</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="idModalLogin" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="idFormLogin" class="form-horizontal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                        <h2 class="modal-title">Login</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label">Username</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="username" placeholder="Enter your username" required="" autofocus="" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" name="password" placeholder="Enter your password" required="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
