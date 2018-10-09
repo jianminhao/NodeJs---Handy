@@ -1,0 +1,106 @@
+/* STYLING
+============================================================================= */
+body                          { background: #f2f2f2; color: #ffffff; }
+
+/* Page Headers */
+.cHeaderContainer             { height: 100px; min-height: 100px; background: #ffffff; margin-bottom: 20px; text-align:center; box-shadow: 0 5px 5px -2px #888888; -moz-box-shadow: 0 5px 5px -2px #888888; -webkit-box-shadow: 0 5px 5px -2px #888888; }
+
+/* House Keeping */
+.loadingScreen                { background-color: #337ab6; padding: 100px; box-shadow: 0 0 5px 5px #888888; -moz-box-shadow: 0 0 5px 5px #888888; -webkit-box-shadow: 0 0 5px 5px #888888; }
+select::-ms-expand            { display: none; }
+select                        { -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; }
+
+/* Panel Heading buttons */
+header.panel-heading > span a              { color:#ffffff; display:inline-block; text-decoration:none; font-size:16px; margin: 0 10px; text-align:center; }
+header.panel-heading > span a.active       { text-decoration:none; }
+header.panel-heading > span a.active span  { background: #fd9801; color:#ffffff; }
+header.panel-heading > span a > span       { color:#000000; }
+header.panel-heading > span a > span       { background: #ffffff; display:block; height:30px; width:30px; margin:0 auto; padding-top:5px; border-radius:50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; box-shadow: 0 0 0 20px rgba(255,255,255,0); -webkit-box-shadow: 0 0 0 20px rgba(255,255,255,0); -moz-box-shadow: 0 0 0 20px rgba(255,255,255,0); transition: box-shadow .6s; -webkit-transition: box-shadow .6s; -moz-transition: box-shadow .6s; }
+header.panel-heading > span a:hover > span { box-shadow:0 0 0 0 rgba(255,255,255,0.5); -webkit-box-shadow:0 0 0 0 rgba(255,255,255,0.5); -moz-box-shadow:0 0 0 0 rgba(255,255,255,0.5); }
+@media(max-width: 450px)
+{
+	header.panel-heading > span a          { width: 85px; }
+}
+
+/* Form Related */
+.form-container                              { background: #ffffff; border: 1px solid #888888; border-radius:7px; margin-bottom:20px; text-align: center; }
+.form-container form header                  { background: #337ab6; border-top-left-radius:7px; border-top-right-radius:7px; color: #ffffff; margin:0; }
+.form-container form .panel-heading > h2     { padding: 0; margin: 10px 0 20px 0; }
+.form-container form .panel-body             { color: #000000; position:relative; min-height:500px; overflow:hidden; }
+.form-container form .panel-body h3          { padding: 0 0 10px 0; margin: 0; }
+.form-container form .panel-body .form-group { margin: 5px 0; }
+.form-container form footer                  { background: #ffffff; border-bottom-left-radius:7px; border-bottom-right-radius:7px; margin:0; padding:15px; }
+.error-messages                              { transition: 0.1s ease-out all; }
+.error-messages.ng-active                    { background: #d8534f; color:white; padding:5px; margin-top: 5px; border-radius:5px; position:relative; }
+.error-messages.ng-active:after              { position:absolute; top:-10px; content:""; left:20px; border-style:solid; border-color:transparent transparent #d8534f; border-width:5px; }
+.required                                    { border: 1px solid #d9534f }
+
+/* Form Animation */
+.form-view.forward.ng-leave,
+.form-view.forward.ng-enter,
+.form-view.backward.ng-leave,
+.form-view.backward.ng-enter                  { position:absolute; left:30px; right:30px; transition:0.5s all ease; -moz-transition:0.5s all ease; -webkit-transition:0.5s all ease; }
+.form-view.forward.ng-leave.ng-leave-active   { -webkit-animation:slideOutLeft 0.5s both ease; -moz-animation:slideOutLeft 0.5s both ease; animation:slideOutLeft 0.5s both ease; }
+.form-view.forward.ng-enter.ng-enter-active   { -webkit-animation:slideInRight 0.5s both ease; -moz-animation:slideInRight 0.5s both ease; animation:slideInRight 0.5s both ease; }
+.form-view.backward.ng-leave.ng-leave-active  { -webkit-animation:slideOutRight 0.5s both ease; -moz-animation:slideOutRight 0.5s both ease; animation:slideOutRight 0.5s both ease; }
+.form-view.backward.ng-enter.ng-enter-active  { -webkit-animation:slideInLeft 0.5s both ease; -moz-animation:slideInLeft 0.5s both ease; animation:slideInLeft 0.5s both ease; }
+
+
+
+/* ANIMATIONS
+============================================================================= */
+/* slide IN to the left */
+@keyframes slideInLeft {
+	from 	{ transform:translateX(-100%); }
+	to 		{ transform: translateX(0); }
+}
+@-moz-keyframes slideInLeft {	
+	from 	{ transform:translateX(-100%); }
+	to 		{ transform: translateX(0); }
+}
+@-webkit-keyframes slideInLeft {
+	from 	{ transform:translateX(-100%); }
+	to 		{ transform: translateX(0); }
+}
+
+/* slide OUT to the left */
+@keyframes slideOutLeft {
+	from 	{ transform:translateX(0); }
+	to 		{ transform: translateX(-100%); }
+}
+@-moz-keyframes slideOutLeft {	
+	from 	{ transform:translateX(0); }
+	to 		{ transform: translateX(-100%); }
+}
+@-webkit-keyframes slideOutLeft {
+	from 	{ transform:translateX(0); }
+	to 		{ transform: translateX(-100%); }
+}
+
+/* slide IN from the right */
+@keyframes slideInRight {
+	from 	{ transform:translateX(100%); }
+	to 		{ transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+	from 	{ -moz-transform:translateX(100%); }
+	to 		{ -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+	from 	{ -webkit-transform:translateX(100%); }
+	to 		{ -webkit-transform: translateX(0); }
+}
+
+/* slide OUT from the right */
+@keyframes slideOutRight {
+	from 	{ transform:translateX(0); }
+	to 		{ transform: translateX(100%); }
+}
+@-moz-keyframes slideOutRight {
+	from 	{ -moz-transform:translateX(0); }
+	to 		{ -moz-transform: translateX(100%); }
+}
+@-webkit-keyframes slideOutRight {
+	from 	{ -webkit-transform:translateX(0); }
+	to 		{ -webkit-transform: translateX(100%); }
+}
